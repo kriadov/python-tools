@@ -4,7 +4,7 @@ if [ -z $1 ]; then
   exit 1
 fi
 if ! ps -p $1 > /dev/null ; then
-  echo Process with pid $0 not found. 
+  echo Process with pid $1 not found. 
   exit 2
 fi
 if ! which pyrasite > /dev/null ; then
